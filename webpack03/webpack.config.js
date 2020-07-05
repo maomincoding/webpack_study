@@ -21,7 +21,14 @@ module.exports = {
     // }
     {
       test:/\.scss$/,
-      use: ["style-loader", "css-loader", "sass-loader","postcss-loader"]
+      use: ["style-loader", {
+        loader:"css-loader",
+        // 不管你是在js中直接引入css,还是在css中再引入css文件。加上下面的importLoaders，都会走sass-loader和postcss-loader。
+        options:{
+          importLoaders:2,
+          modules:true // 应用css Modules
+        }
+      }, "sass-loader","postcss-loader"]
     }
   ]
   },
