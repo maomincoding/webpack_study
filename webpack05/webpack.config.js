@@ -3,10 +3,16 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports={
-    mode: 'production', // development\production 模式
-    entry: './src/index.js',
+    mode: 'development', // development\production 模式
+    // entry: './src/index.js',
+    entry:{
+        main:'./src/index.js',
+        sub:'./src/index.js'
+    },
     output: {
-        filename: 'bundle.js',
+        //filename: 'bundle.js',
+        publicPath:"https://cdn.cn",
+        filename:'[name].js', //或者是[hash].js
         path: path.resolve(__dirname, 'dist')
     },
     plugins:[
