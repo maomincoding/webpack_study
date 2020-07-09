@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-consele.log("hello world");
+console.log("hello world maomin1");
 
 
 /***/ })
