@@ -93,10 +93,8 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-console.log("hello world maomin1");
-
+eval("console.log(\"hello world maomin1\");\n\n\n//# sourceURL=webpack:///./src/index.js?");
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=bundle.js.map
