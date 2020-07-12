@@ -1,0 +1,4 @@
+div:nth-of-type(even){
+    background: red;
+    color:#fff;
+}

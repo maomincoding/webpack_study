@@ -1,4 +1,5 @@
-const path = require('path')
+const path = require('path');
+const webpack = require("webpack");
 module.exports = {
   mode:'development', // development\production 模式
   entry:'./src/index.js',
@@ -7,8 +8,21 @@ module.exports = {
     open:true,
     proxy:{
       '/api':"http://localhost:3000/"
-    }
+    },
+    hot: true,
+    hotOnly:true
   },
+  module:{
+    rules: [
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
+      }
+    ]
+  },
+  plugins:[
+    new webpack.HotModuleReplacementPlugin()
+  ],
   output:{
     publicPath:"/",
     filename:'bundle.js',

@@ -14,3 +14,20 @@
 这种方法好在你不用每次更改完再重新刷新页面，它会自动帮你刷新页面以及自动执行打包命令，还有它会给你开启一个服务器，可以在一些处理`ajax`请求时更好的解决。
 
 3. 搭建一个node服务器，来启动webpack。首先我们需要安装依赖，`express`、`webpack-dev-middleware`，然后我们在根目录下创建一个`server.js`。具体内容可以看我自己配置的。最后，使用`node server.js`命令启动服务器。
+## 怎么使用webpack-dev-server实现webpack热更新
+在webpack.config.js配置devSever字段。
+```js
+  devServer:{
+    contentBase:'./dist',
+    open:true,
+    hot: true, // 开启热更新
+    hotOnly:true  //  也写成true
+  },
+```
+然后，在plugins字段中引入插件。这里主要还需要引入webpack,`const webpack require("webpack");`
+```js
+  plugins:[
+    new webpack.HotModuleReplacementPlugin()
+  ],
+```
+热更新的好处是不管你改变页面的内容还是css、js都不会重新自动刷新页面，只改变你改变的内容。
