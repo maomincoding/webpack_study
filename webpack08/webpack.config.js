@@ -14,7 +14,10 @@ module.exports = {
   entry:'./src/index.js',
   module:{
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
+      { test: /\.js$/, 
+        exclude: /node_modules/, //排除第三方打包
+        loader: "babel-loader"
+      }
     ]
   },
   output:{
