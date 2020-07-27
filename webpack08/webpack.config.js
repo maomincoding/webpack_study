@@ -1,14 +1,20 @@
 const path = require('path')
+
+// options: {
+//     "presets": [["@babel/preset-env", {
+//       targets: {
+//         chrome: "67"
+//       },
+//       useBuiltIns: 'usage'
+//     }]]
+//   }
+
 module.exports = {
   mode:'development', // development\production 模式
   entry:'./src/index.js',
   module:{
     rules: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader",options:{
-        "presets": [["@babel/preset-env",{
-          useBuiltIns:'usage'
-        }]]
-      }}
+      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader"}
     ]
   },
   output:{

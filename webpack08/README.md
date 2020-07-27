@@ -45,3 +45,5 @@ import "@babel/polyfill";
     ]
   },
 ```
+## 生成.babelrc文件
+你可以将babel配置项内的`options`字段提出来，在根目录下创建一个`.babelrc`文件。
