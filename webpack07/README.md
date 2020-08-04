@@ -5,7 +5,7 @@
     contentBase:'./dist',
     open:true,
     hot: true, // 开启热更新
-    hotOnly:true  //  也写成true
+    hotOnly:true  //  某些模块不支持热更新的情况下,不会刷新页面，而是在控制台输出热更新失败
   },
 ```
 然后，在plugins字段中引入插件。这里主要还需要引入webpack,`const webpack require("webpack");`
