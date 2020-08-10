@@ -1,0 +1,1 @@
+console.log(_.join(['a','b','c'],"*")) //a*b*c
