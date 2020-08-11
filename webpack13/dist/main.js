@@ -92,7 +92,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "3be2ea7f4db0a817c977";
+/******/ 	var hotCurrentHash = "4286ce6d2aeb30758f41";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -809,7 +809,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "" + ({}[chunkId]||chunkId) + ".js"
+/******/ 		return __webpack_require__.p + "" + ({"vendors~lodash":"vendors~lodash"}[chunkId]||chunkId) + ".js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -981,7 +981,7 @@
 /*! all exports used */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("// 同步引入第三方模块\n// import _ from \"lodash\"\n// console.log(_.join(['a','b','c'],\"*\")) //a*b*c\n// 异步引入第三方模块\nfunction getComponent() {\n  return new Promise(resolve => {\n    __webpack_require__.e(/*! require.ensure */ 0).then((require => {\n      resolve(__webpack_require__(/*! lodash */ \"./node_modules/lodash/lodash.js\"));\n    }).bind(null, __webpack_require__)).catch(__webpack_require__.oe);\n  }).then(({\n    default: _\n  }) => {\n    var element = document.createElement('div');\n    element.innerHTML = _.join(['maomin,xqm'], '-');\n    return element;\n  });\n}\n\ngetComponent().then(element => {\n  document.body.appendChild(element);\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyDlkIzmraXlvJXlhaXnrKzkuInmlrnmqKHlnZdcbi8vIGltcG9ydCBfIGZyb20gXCJsb2Rhc2hcIlxuXG4vLyBjb25zb2xlLmxvZyhfLmpvaW4oWydhJywnYicsJ2MnXSxcIipcIikpIC8vYSpiKmNcblxuLy8g5byC5q2l5byV5YWl56ys5LiJ5pa55qih5Z2XXG5mdW5jdGlvbiBnZXRDb21wb25lbnQoKSB7XG4gICAgcmV0dXJuIGltcG9ydCgnbG9kYXNoJykudGhlbigoe2RlZmF1bHQ6X30pPT57XG4gICAgICAgIHZhciBlbGVtZW50ID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7XG4gICAgICAgIGVsZW1lbnQuaW5uZXJIVE1MID0gXy5qb2luKFsnbWFvbWluLHhxbSddLCctJyk7XG4gICAgICAgIHJldHVybiBlbGVtZW50O1xuICAgIH0pXG59XG5cbmdldENvbXBvbmVudCgpLnRoZW4oZWxlbWVudCA9PiB7XG4gICAgZG9jdW1lbnQuYm9keS5hcHBlbmRDaGlsZChlbGVtZW50KTtcbn0pIl0sIm1hcHBpbmdzIjoiQUFBQTtBQUNBO0FBRUE7QUFFQTtBQUNBO0FBQ0E7QUFBQTtBQUFBO0FBQUE7QUFBQTtBQUFBO0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./src/index.js\n");
+eval("// 同步引入第三方模块\n// import _ from \"lodash\"\n// console.log(_.join(['a','b','c'],\"*\")) //a*b*c\n// 异步引入第三方模块\nfunction getComponent() {\n  return __webpack_require__.e(/*! import() | lodash */ \"vendors~lodash\").then(__webpack_require__.t.bind(null, /*! lodash */ \"./node_modules/lodash/lodash.js\", 7)).then(({\n    default: _\n  }) => {\n    var element = document.createElement('div');\n    element.innerHTML = _.join(['maomin,xqm'], '-');\n    return element;\n  });\n}\n\ngetComponent().then(element => {\n  document.body.appendChild(element);\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9zcmMvaW5kZXguanMuanMiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9zcmMvaW5kZXguanM/YjYzNSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyDlkIzmraXlvJXlhaXnrKzkuInmlrnmqKHlnZdcbi8vIGltcG9ydCBfIGZyb20gXCJsb2Rhc2hcIlxuXG4vLyBjb25zb2xlLmxvZyhfLmpvaW4oWydhJywnYicsJ2MnXSxcIipcIikpIC8vYSpiKmNcblxuLy8g5byC5q2l5byV5YWl56ys5LiJ5pa55qih5Z2XXG5mdW5jdGlvbiBnZXRDb21wb25lbnQoKSB7XG4gICAgcmV0dXJuIGltcG9ydCgvKndlYnBhY2tDaHVua05hbWU6XCJsb2Rhc2hcIiovJ2xvZGFzaCcpLnRoZW4oKHtkZWZhdWx0Ol99KT0+e1xuICAgICAgICB2YXIgZWxlbWVudCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpO1xuICAgICAgICBlbGVtZW50LmlubmVySFRNTCA9IF8uam9pbihbJ21hb21pbix4cW0nXSwnLScpO1xuICAgICAgICByZXR1cm4gZWxlbWVudDtcbiAgICB9KVxufVxuXG5nZXRDb21wb25lbnQoKS50aGVuKGVsZW1lbnQgPT4ge1xuICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQoZWxlbWVudCk7XG59KSJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUVBO0FBRUE7QUFDQTtBQUNBLG9LQUFBO0FBQUE7QUFBQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSIsInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./src/index.js\n");
 
 /***/ })
 
